@@ -1,0 +1,11 @@
+melhorias no mini projeto [aranhaverso]
+
+1- consertar a quebra de imagens, textos e bordas quando dimunui o tamanho da plataforma (site)
+
+2- adicionar vídeos interativos com imagens
+
+3- se possível, tentar criar um menu
+
+4- ter um trailer do filme no site
+
+5- adicionar gifs animados

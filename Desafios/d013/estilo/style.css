@@ -29,6 +29,38 @@ header {
     
 }
 
+nav {
+    background-color: #841e1e44;
+    
+    padding: 10px 0;
+    margin: 0 auto;
+    border: 2px solid rgba(0, 0, 0, 0.295);
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+nav > ul > li:hover{
+    background-color: rgba(0, 0, 0, 0.321)
+    
+    
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.menu > li {
+    margin: 0 10px;
+    transition-duration: .8s;
+
+}
+
 .titulo {
     font-family: var(--font-secondary); /* Usando fonte secundária para o título */
     font-size: 2.5rem; /* Tamanho do título */
@@ -48,12 +80,13 @@ header {
     align-items: center; /* Centralizar itens */
     background: #fff; /* Cor de fundo branca */
     border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.704); /* Sombra para dar profundidade */
     margin: 20px auto; /* Margem para centralizar */
     max-width: 800px; /* Largura máxima */
     padding: 20px; /* Espaçamento interno */
     overflow: hidden; /* Evita quebras de linhas */
     background-color: blue;
+
 }
 
 .container img {
@@ -66,7 +99,9 @@ header {
 .container p {
     margin-top: 15px; /* Espaçamento acima dos parágrafos */
     text-align: justify; /* Justifica o texto */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.707);
     color: white;
+    line-height: 2em; /* Espaçamento entre as linhas */
 
 }
 

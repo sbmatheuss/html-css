@@ -1,95 +1,115 @@
 @charset 'UTF-8';
 
+/* Importação de fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&family=Shadows+Into+Light&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-
 * {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  
-  --font01: 'Sarala';
-  --font02: 'Shadows Into Light', sans-serif;
-
+    --font-primary: 'Sarala', sans-serif; /* Fonte principal */
+    --font-secondary: 'Shadows Into Light', cursive; /* Fonte secundária */
 }
 
-h1.titulo {
-  font-family: var(--font02);
-  text-align: center;
-  background-color: black;
-  color: white;
-  border: 22px solid rgba(255, 0, 0, 0.301);
-  padding: 2px 850px;
-  
-  
+body {
+    font-family: var(--font-primary);
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    background: url('../imagens/wsp.jpeg') center no-repeat fixed;
+    background-size: cover;
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
 }
 
+header {
+    text-align: center;
+    margin: 20px 0;
+    
+}
 
+.titulo {
+    font-family: var(--font-secondary); /* Usando fonte secundária para o título */
+    font-size: 2.5rem; /* Tamanho do título */
+    color: #c0392b; /* Cor do título */
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 26px;
+    height: 70px;
+    padding: 3px;
+    display: inline-block;
+    margin: 7px 0px;
+}
 
 .container {
-  background: url('../imagens/wallpaper01.jpg') center no-repeat fixed;
-  background-size: flex;
-  display: flex;
-  color: white;
-  padding: 71px;
-  
+    display: flex; /* Flexbox para organizar conteúdo */
+    flex-direction: column; /* Colocar itens em coluna */
+    align-items: center; /* Centralizar itens */
+    background: #fff; /* Cor de fundo branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    margin: 20px auto; /* Margem para centralizar */
+    max-width: 800px; /* Largura máxima */
+    padding: 20px; /* Espaçamento interno */
+    overflow: hidden; /* Evita quebras de linhas */
+    background-color: blue;
+}
+
+.container img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Bordas arredondadas para imagens */
+    
+}
+
+.container p {
+    margin-top: 15px; /* Espaçamento acima dos parágrafos */
+    text-align: justify; /* Justifica o texto */
+    color: white;
 
 }
 
-a:hover {
+.container > p > a {
+  background-color: black;
+  color: red;
+  text-decoration: none;
+}
+
+.container > p > a:hover {
   text-decoration: underline;
 }
 
-div > p > a {
-  text-decoration: none;
-  color: red;
-  background-color: black;
-  border: 2px solid black;
-  padding: 2px 5px;
-
-  
-  
+footer {
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9rem; /* Tamanho do texto do footer */
+    background-color: black;
 }
 
-div > p {
-  text-align: justify;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.337);
-  text-indent: 15px;
-  border: 2px solid black;
-  border-radius: 8px;
-  margin: 112px 190px;
-  background-color: blue;
-  height: 180px;
-  box-shadow: 2px solid black;
-  padding: 20px;
-
-  
+/* Link no footer */
+footer a {
+    color: red; /* Cor do link */
+    text-decoration: none; /* Sem sublinhado */
 }
 
-div > img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-  border: 5px solid black;
-  border-radius: 10px;
-  background-color: blue;
-  padding: 0px 10px;
-  
+footer a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
 }
 
-footer > p > a {
-  text-align: center;
-  color: red;
-  text-decoration: none;
-}
+/* Media queries para responsividade */
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 2rem; /* Tamanho menor em telas pequenas */
+    }
 
-footer > p {
-  text-align: center;
-  color: white;
-  background-color: black;
+    .container {
+        padding: 15px; /* Menos padding em telas pequenas */
+    }
+
+    .container p {
+        font-size: 0.95rem; /* Tamanho do texto reduzido em telas pequenas */
+    }
 }
 

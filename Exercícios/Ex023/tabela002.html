@@ -12,6 +12,7 @@
     table {
       width: 450px;
       border-collapse: collapse;
+      position: relative;
     }
 
     td, th {
@@ -27,8 +28,22 @@
     }
 
     thead, tfoot{
-      background-color: gray;
+      background-color: rgb(60, 60, 60);
       color: white;
+    }
+
+    thead > tr > th {
+      position: sticky;
+      top: -1px;
+      background-color: rgb(60, 60, 60);
+    }
+
+    tbody > tr:nth-child(odd) { /* 2n-1 */
+      background-color: white;
+    }
+
+    tbody > tr:nth-child(even) {  /* 2n */
+      background-color: lightgray;
     }
 
     td.num {
@@ -203,5 +218,26 @@
           </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit ea non in perferendis quae eveniet ratione sint id eaque aliquid voluptatem, ut rerum odio autem a dolorem iusto earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et. Quae, atque. Est aut praesentium ex quasi sed quo alias, quia libero voluptatibus non facere odit aliquam! Tenetur, aliquid illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, excepturi! Eius accusantium sapiente voluptatibus, alias ab illo explicabo numquam, ex aspernatur saepe aliquid? Architecto, at natus modi dicta eius voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur nisi illum perspiciatis quo incidunt placeat reprehenderit deserunt minima tempore, sed exercitationem vitae omnis itaque corrupti perferendis laudantium esse impedit?</p> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit ea non in perferendis quae eveniet ratione sint id eaque aliquid voluptatem, ut rerum odio autem a dolorem iusto earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et. Quae, atque. Est aut praesentium ex quasi sed quo alias, quia libero voluptatibus non facere odit aliquam! Tenetur, aliquid illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, excepturi! Eius accusantium sapiente voluptatibus, alias ab illo explicabo numquam, ex aspernatur saepe aliquid? Architecto, at natus modi dicta eius voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur nisi illum perspiciatis quo incidunt placeat reprehenderit deserunt minima tempore, sed exercitationem vitae omnis itaque corrupti perferendis laudantium esse impedit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit ea non in perferendis quae eveniet ratione sint id eaque aliquid voluptatem, ut rerum odio autem a dolorem iusto earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et. Quae, atque. Est aut praesentium ex quasi sed quo alias, quia libero voluptatibus non facere odit aliquam! Tenetur, aliquid illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, excepturi! Eius accusantium sapiente voluptatibus, alias ab illo explicabo numquam, ex aspernatur saepe aliquid? Architecto, at natus modi dicta eius voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur nisi illum perspiciatis quo incidunt placeat reprehenderit deserunt minima tempore, sed exercitationem vitae omnis itaque corrupti perferendis laudantium esse impedit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit ea non in perferendis quae eveniet ratione sint id eaque aliquid voluptatem, ut rerum odio autem a dolorem iusto earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et. Quae, atque. Est aut praesentium ex quasi sed quo alias, quia libero voluptatibus non facere odit aliquam! Tenetur, aliquid illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, excepturi! Eius accusantium sapiente voluptatibus, alias ab illo explicabo numquam, ex aspernatur saepe aliquid? Architecto, at natus modi dicta eius voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur nisi illum perspiciatis quo incidunt placeat reprehenderit deserunt minima tempore, sed exercitationem vitae omnis itaque corrupti perferendis laudantium esse impedit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit ea non in perferendis quae eveniet ratione sint id eaque aliquid voluptatem, ut rerum odio autem a dolorem iusto earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et. Quae, atque. Est aut praesentium ex quasi sed quo alias, quia libero voluptatibus non facere odit aliquam! Tenetur, aliquid illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, excepturi! Eius accusantium sapiente voluptatibus, alias ab illo explicabo numquam, ex aspernatur saepe aliquid? Architecto, at natus modi dicta eius voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur nisi illum perspiciatis quo incidunt placeat reprehenderit deserunt minima tempore, sed exercitationem vitae omnis itaque corrupti perferendis laudantium esse impedit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit ea non in perferendis quae eveniet ratione sint id eaque aliquid voluptatem, ut rerum odio autem a dolorem iusto earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et. Quae, atque. Est aut praesentium ex quasi sed quo alias, quia libero voluptatibus non facere odit aliquam! Tenetur, aliquid illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, excepturi! Eius accusantium sapiente voluptatibus, alias ab illo explicabo numquam, ex aspernatur saepe aliquid? Architecto, at natus modi dicta eius voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur nisi illum perspiciatis quo incidunt placeat reprehenderit deserunt minima tempore, sed exercitationem vitae omnis itaque corrupti perferendis laudantium esse impedit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit ea non in perferendis quae eveniet ratione sint id eaque aliquid voluptatem, ut rerum odio autem a dolorem iusto earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et. Quae, atque. Est aut praesentium ex quasi sed quo alias, quia libero voluptatibus non facere odit aliquam! Tenetur, aliquid illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, excepturi! Eius accusantium sapiente voluptatibus, alias ab illo explicabo numquam, ex aspernatur saepe aliquid? Architecto, at natus modi dicta eius voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur nisi illum perspiciatis quo incidunt placeat reprehenderit deserunt minima tempore, sed exercitationem vitae omnis itaque corrupti perferendis laudantium esse impedit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit ea non in perferendis quae eveniet ratione sint id eaque aliquid voluptatem, ut rerum odio autem a dolorem iusto earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et. Quae, atque. Est aut praesentium ex quasi sed quo alias, quia libero voluptatibus non facere odit aliquam! Tenetur, aliquid illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, excepturi! Eius accusantium sapiente voluptatibus, alias ab illo explicabo numquam, ex aspernatur saepe aliquid? Architecto, at natus modi dicta eius voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur nisi illum perspiciatis quo incidunt placeat reprehenderit deserunt minima tempore, sed exercitationem vitae omnis itaque corrupti perferendis laudantium esse impedit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit ea non in perferendis quae eveniet ratione sint id eaque aliquid voluptatem, ut rerum odio autem a dolorem iusto earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et. Quae, atque. Est aut praesentium ex quasi sed quo alias, quia libero voluptatibus non facere odit aliquam! Tenetur, aliquid illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, excepturi! Eius accusantium sapiente voluptatibus, alias ab illo explicabo numquam, ex aspernatur saepe aliquid? Architecto, at natus modi dicta eius voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur nisi illum perspiciatis quo incidunt placeat reprehenderit deserunt minima tempore, sed exercitationem vitae omnis itaque corrupti perferendis laudantium esse impedit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit ea non in perferendis quae eveniet ratione sint id eaque aliquid voluptatem, ut rerum odio autem a dolorem iusto earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et. Quae, atque. Est aut praesentium ex quasi sed quo alias, quia libero voluptatibus non facere odit aliquam! Tenetur, aliquid illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, excepturi! Eius accusantium sapiente voluptatibus, alias ab illo explicabo numquam, ex aspernatur saepe aliquid? Architecto, at natus modi dicta eius voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur nisi illum perspiciatis quo incidunt placeat reprehenderit deserunt minima tempore, sed exercitationem vitae omnis itaque corrupti perferendis laudantium esse impedit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit ea non in perferendis quae eveniet ratione sint id eaque aliquid voluptatem, ut rerum odio autem a dolorem iusto earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et. Quae, atque. Est aut praesentium ex quasi sed quo alias, quia libero voluptatibus non facere odit aliquam! Tenetur, aliquid illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, excepturi! Eius accusantium sapiente voluptatibus, alias ab illo explicabo numquam, ex aspernatur saepe aliquid? Architecto, at natus modi dicta eius voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur nisi illum perspiciatis quo incidunt placeat reprehenderit deserunt minima tempore, sed exercitationem vitae omnis itaque corrupti perferendis laudantium esse impedit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati omnis odio illum! Nisi, natus nulla quis optio ullam inventore quod asperiores, reiciendis, expedita voluptatum excepturi quae. Itaque asperiores facilis libero.</p>
 </body>
 </html>

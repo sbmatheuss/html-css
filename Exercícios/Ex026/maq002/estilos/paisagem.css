@@ -3,5 +3,6 @@
 /* Aparelho deitado (landscape) */
 
 body {
-  background-color: orange;
+  background-image: url('../imagnes/cev-landscape.jpg');
+  background-position: left bottom;
 }

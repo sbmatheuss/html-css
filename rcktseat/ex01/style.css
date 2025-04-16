@@ -1,11 +1,10 @@
 .container{
 
-  height: 50vh;
+  
   border: dashed;
   display: flex;
   
-  align-content: space-evenly;
-  flex-wrap: wrap;
+  
   
 }
 
@@ -13,5 +12,6 @@
   --hue: 0;
   text-align: center;
   background-color: hsl(var(--hue), 100%, 70%);
-  width: 120px;
+  flex-basis: 120px;
 }
+
